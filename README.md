@@ -38,16 +38,16 @@ cd /opt/netcup-dyndns-ruby-script/
 sudo chmod 700 netcup_dyndns.rb
 ```
 
-Add the entry to the root users crontab (In this example add the entry to update the dns every day at 5 am):
+Add the entry to the root users crontab (In this example add the entry to update the dns every day at 6 am):
 ```
 sudo crontab -e
 
 
 Add the following line (with the correct replacements for your credentials and domain data):
 
-00 05 * * * NETCUP_API_KEY=your_api_key NETCUP_API_PASSWORD=your_api_password NETCUP_CUSTOMER_ID=your_customer_id NETCUP_TOP_LEVEL_DOMAIN=your-domain.com NETCUP_TARGET_HOST=your-target-host ruby /opt/netcup-dyndns-ruby-script/netcup_dyndns.rb
+00 06 * * * NETCUP_API_KEY=your_api_key NETCUP_API_PASSWORD=your_api_password NETCUP_CUSTOMER_ID=your_customer_id NETCUP_TOP_LEVEL_DOMAIN=your-domain.com NETCUP_TARGET_HOST=target_host ruby /opt/netcup-dyndns-ruby-script/netcup_dyndns.rb
 ```
 Note that you have to add the absolute path to the file here.
-If you want to change the dns for your target domain, use * as target_host value.
+If you want to change the dns for your top level domain, use * as target_host value.
 
 For sure you should also be able to execute the script as non root. You just have to set other permissions and change the crontab of the user who executes the script. I just took the root here because i think updating the DNS records should be something the admin should be restricted to.
