@@ -1,3 +1,6 @@
+!!!! IMPORTANT NOTE !!!!
+This repository was moved to [Codeberg](https://codeberg.org/D4uS1/netcup-dyndns-ruby-script). The github repository is not maintained anymore.
+
 # Netcup DynDNS script
 This ruby script updates a dns record using your internet ip adress.
 It can be used as DynDNS if you automate the script usage periodically.
