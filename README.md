@@ -1,4 +1,4 @@
-!!!! IMPORTANT NOTE !!!!
+# !!!! IMPORTANT NOTE !!!!
 This repository was moved to [Codeberg](https://codeberg.org/D4uS1/netcup-dyndns-ruby-script). The github repository is not maintained anymore.
 
 # Netcup DynDNS script
